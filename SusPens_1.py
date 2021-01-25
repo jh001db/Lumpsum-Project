@@ -52,17 +52,14 @@ st.sidebar.write("#")
 
 #User input: Expected "Tweede Pijler Pensioen" in EUR - per month + warning
 st.sidebar.write('Stap 2')
-SB100 = st.sidebar.number_input("Verwachte Tweede Pijler Pensioen in EUR - totaal", min_value=1, max_value=2500000)
+SB10 = st.sidebar.number_input("Verwachte netto pensioen per maand in EUR", min_value=1, max_value=2500000)
 
 #External link to "https://www.mijnpensioenoverzicht.nl" which provides Dutch citizens with an overview of their pensioen after logging-in with their DigiD (Digital ID)
 SBLink1 = '[mijnpensioenoverzicht.nl](https://www.mijnpensioenoverzicht.nl)'
-st.sidebar.markdown(f"Op {SBLink1} kunt u vinden hoeveel Tweede Pijler Pensioen u heeft opgebouwd en welk pensioen nog opgebouwd wordt als u doorwerkt tot uw pensioendatum.", unsafe_allow_html=True)
+st.sidebar.markdown(f"Op {SBLink1} vindt u hoeveel netto pensioen per maand u ontvangt via uw pensioenuitvoerders en AOW. U kunt dit bedrag hier invullen.", unsafe_allow_html=True)
 
 #White line
 st.sidebar.write("#")
-
-#Expected "Tweede Pijler Pensioen" divided by 283 months - this results in a life-expectancy of the retirement age + 23,5 years (as indicated by the SVB)
-SB10 = SB100/283
 
 #User input: Expected "Derde Pijler Pensioen" in EUR - total + the number of years the person wants to make use of this amount
 st.sidebar.write('Stap 3')
