@@ -15,7 +15,9 @@ import numpy as np
 #  SB3       = Years to enjoy "Derde Pijler Pensioen"
 #  SB4       = Percentage of last net salary needed as pension
 #  SB10      = "Tweede Pijler Pensioen"
+#  SB100     = Net Pension per Month
 #  SB11      = Final net salary
+#  SB12      = "Eerste Pijler Pensioen" / AOW
 #  SB13/23   = Actual Pension
 #  SB14/24   = Actual Percentage
 #  SBLink    = external links
@@ -49,13 +51,16 @@ SB11 = st.sidebar.number_input("Uw huidige of laatst genoten netto salaris in EU
 #White line
 st.sidebar.write("#")
 
-#User input: Expected "Tweede Pijler Pensioen" in EUR - per month + warning
+#User input: Expected Net Pension per Month in EUR - per month + warning
 st.sidebar.write('Stap 2')
-SB10 = st.sidebar.number_input("Verwachte netto pensioen per maand in EUR", min_value=1, max_value=2500000)
+SB100 = st.sidebar.number_input("Verwachte netto pensioen per maand in EUR", min_value=1, max_value=2500000)
 
 #External link to "https://www.mijnpensioenoverzicht.nl" which provides Dutch citizens with an overview of their pensioen after logging-in with their DigiD (Digital ID)
 SBLink1 = '[mijnpensioenoverzicht.nl](https://www.mijnpensioenoverzicht.nl)'
 st.sidebar.markdown(f"Op {SBLink1} vindt u hoeveel netto pensioen per maand u ontvangt via uw pensioenuitvoerders en AOW. U kunt dit bedrag hier invullen.", unsafe_allow_html=True)
+
+
+SB10 = SB100 - SB12
 
 #White line
 st.sidebar.write("#")
