@@ -216,10 +216,10 @@ if SB2 > 0:
         st.markdown(f"<h2 style='text-align: center;'> {'€ ' + str(SB11) + '.-'} </h2>", unsafe_allow_html=True)
     with graph_014:
         st.markdown("<h1 style='text-align: center;'>Pensioen</h1>", unsafe_allow_html=True)
-    if SB23 > 950:
-        st.markdown(f"<h2 style='text-align: center;'>{'€ '}{SB23:.2f}</h2>", unsafe_allow_html=True)
-    else:
-        pass
+        if SB23 > 950:
+            st.markdown(f"<h2 style='text-align: center;'>{'€ '}{SB23:.2f}</h2>", unsafe_allow_html=True)
+        else:
+            pass
     with graph_015:
         st.markdown("<h1 style='text-align: center;'>Percentage</h1>", unsafe_allow_html=True)
         if SB4 < SB24 and 40 < SB24 < 150:
