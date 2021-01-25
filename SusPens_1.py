@@ -14,6 +14,7 @@ import numpy as np
 #  SB2       = "Derde Pijler Pensioen"
 #  SB3       = Years to enjoy "Derde Pijler Pensioen"
 #  SB4       = Percentage of last net salary needed as pension
+#  SB5       = Life expectancy
 #  SB10      = "Tweede Pijler Pensioen"
 #  SB100     = Net Pension per Month
 #  SB11      = Final net salary
@@ -43,6 +44,9 @@ st.write("#")
 
 #Current AOW as indicated by the SVB ("Eerste Pijler Pensioen")
 SB12 = 970
+
+#Life expectancy in months (= 23.5 years)
+SB5 = 282
 
 #User input: Current or final net salary
 st.sidebar.write('Stap 1')
@@ -111,7 +115,7 @@ with info_2:
         st.markdown(f"<h2 style='text-align: center;'> {str(SB1) + '%'} </h2>", unsafe_allow_html=True)
 with info_3:
     st.markdown("<h1 style='text-align: center;'>In (Bruto) Euro</h1>", unsafe_allow_html=True)
-    st.markdown(f"<h2 style='text-align: center;'> {'€ '}{SB10*SB1/100:.2f} </h2>", unsafe_allow_html=True)
+    st.markdown(f"<h2 style='text-align: center;'> {'€ '}{(SB10*SB5)*SB1/100:.2f} </h2>", unsafe_allow_html=True)
 
 ########################################################################################################################
 #First part which shows salary, pension and percentage - including "Derde Pijler Pensioen"
