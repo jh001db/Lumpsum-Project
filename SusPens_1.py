@@ -48,7 +48,7 @@ SB5 = 282
 
 #User input: Current or final net salary
 st.sidebar.write('Stap 1')
-SB11 = st.sidebar.number_input("Uw huidige of laatst genoten netto salaris in EUR", min_value=1280, max_value=12500)
+SB11 = st.sidebar.number_input("Uw laatst genoten netto maand salaris in EUR", min_value=1280, max_value=12500)
 
 #White line
 st.sidebar.write("#")
