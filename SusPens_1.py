@@ -162,7 +162,7 @@ with info_1:
 with graph_012:
     st.markdown("<h1 style='text-align: center;'>Pensioen</h1>", unsafe_allow_html=True)
     if SB13 > 950:
-        st.markdown(f"<h2 style='text-align: center;'>{'€ '}{SB13:.2f}</h2>", unsafe_allow_html=True)
+       st.markdown(f"<h2 style='text-align: center;'>{'€ '}{SB13:.2f}</h2>", unsafe_allow_html=True)
     else:
         pass
 with graph_013:
