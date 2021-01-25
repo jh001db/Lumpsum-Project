@@ -14,8 +14,7 @@ import numpy as np
 #  SB2       = "Derde Pijler Pensioen"
 #  SB3       = Years to enjoy "Derde Pijler Pensioen"
 #  SB4       = Percentage of last net salary needed as pension
-#  SB10      = "Tweede Pijler Pensioen" percentage
-#  SB100     = "Tweede Pijler Pensioen"
+#  SB10      = "Tweede Pijler Pensioen"
 #  SB11      = Final net salary
 #  SB13/23   = Actual Pension
 #  SB14/24   = Actual Percentage
@@ -107,7 +106,7 @@ with info_2:
         st.markdown(f"<h2 style='text-align: center;'> {str(SB1) + '%'} </h2>", unsafe_allow_html=True)
 with info_3:
     st.markdown("<h1 style='text-align: center;'>In (Bruto) Euro</h1>", unsafe_allow_html=True)
-    st.markdown(f"<h2 style='text-align: center;'> {'€ '}{SB100*SB1/100:.2f} </h2>", unsafe_allow_html=True)
+    st.markdown(f"<h2 style='text-align: center;'> {'€ '}{SB10*SB1/100:.2f} </h2>", unsafe_allow_html=True)
 
 ########################################################################################################################
 #First part which shows salary, pension and percentage - including "Derde Pijler Pensioen"
@@ -152,10 +151,7 @@ with info_1:
     st.markdown("<h1 style='text-align: center;'>Salaris</h1>", unsafe_allow_html=True)
     st.markdown(f"<h2 style='text-align: center;'> {'€ ' + str(SB11) +'.-'} </h2>", unsafe_allow_html=True)
 with graph_012:
-    if SB100 == 1:
-        st.markdown("<h1 style='text-align: center;'>AOW</h1>", unsafe_allow_html=True)
-    else:
-        st.markdown("<h1 style='text-align: center;'>Pensioen</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>Pensioen</h1>", unsafe_allow_html=True)
     st.markdown(f"<h2 style='text-align: center;'>{'€ '}{SB13:.2f}</h2>", unsafe_allow_html=True)
 with graph_013:
     st.markdown("<h1 style='text-align: center;'>Percentage</h1>", unsafe_allow_html=True)
