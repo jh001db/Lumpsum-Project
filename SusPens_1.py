@@ -35,7 +35,7 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 
 #Set header and subheader
 st.markdown("<h1 style='text-align: center;'>LumpSum Calculator</h1>", unsafe_allow_html=True)
-st.markdown("<h2 style='text-align: center;'>Door de stappen te volgens in het linker menu kunt u zien hoe verschillende factoren invloed hebben op uw pensioen.</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center;'>Door de stappen te volgen in het linker menu kunt u zien hoe verschillende factoren invloed hebben op uw pensioen.</h2>", unsafe_allow_html=True)
 
 #White line
 st.write("#")
