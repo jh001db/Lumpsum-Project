@@ -1,8 +1,6 @@
 #Necessary packages
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
-import numpy as np
 
 #Some information concerning the three "Pijler Pensioenen":
 #  Eerste Pijler Pensioen: Basic pension provided by the Dutch government to all Dutch citizens who have reached their retirement age
