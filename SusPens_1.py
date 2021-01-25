@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-#Some information concernign the three "Pijler Pensioenen":
+#Some information concerning the three "Pijler Pensioenen":
 #  Eerste Pijler Pensioen: Basic pension provided by the Dutch government to all Dutch citizens who have reached their retirement age
 #  Tweede  Pijler Pensioen: Additional pension build up partly by employer and party by the individual him/herself during their working-life
 #  Derde Pijler Pensioen: Extra pension build up by the individual (e.g. savings, stocks)
