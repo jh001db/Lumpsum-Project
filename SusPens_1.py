@@ -55,7 +55,7 @@ st.sidebar.write("#")
 
 #User input: Expected Net Pension per Month in EUR - per month + warning
 st.sidebar.write('Stap 2')
-SB100 = st.sidebar.number_input("Verwachte netto pensioen per maand in EUR", min_value=1, max_value=2500000)
+SB100 = st.sidebar.number_input("Verwachte netto pensioen per maand in EUR", min_value=950, max_value=25000, value=970)
 
 #External link to "https://www.mijnpensioenoverzicht.nl" which provides Dutch citizens with an overview of their pensioen after logging-in with their DigiD (Digital ID)
 SBLink1 = '[mijnpensioenoverzicht.nl](https://www.mijnpensioenoverzicht.nl)'
