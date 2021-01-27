@@ -1,6 +1,5 @@
-#Necessary packages
+#Import StreamLit
 import streamlit as st
-import pandas as pd
 
 #Some information concerning the three "Pijler Pensioenen":
 #  Eerste Pijler Pensioen: Basic pension provided by the Dutch government to all Dutch citizens who have reached their retirement age
